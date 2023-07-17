@@ -343,12 +343,12 @@ var blockIndex = 1;
 var blockSize = 16;
 
 var blockDestruction = new Image();
-blockDestruction.src = '/games/tetris_demo_play/images/destruction.png';
+blockDestruction.src = 'images/destruction.png';
 var blockDestination = new Image();
-blockDestination.src = '/games/tetris_demo_play/images/destination.png';
+blockDestination.src = 'images/destination.png';
 
 var blockSamples = new Image();
-blockSamples.src = '/games/tetris_demo_play/images/samples.png';
+blockSamples.src = 'images/samples.png';
 var blockSamplesCoords = {
 	'I':{x:0,  y:0, width:4, height:4},
 	'O':{x:4,  y:0, width:4, height:4},
@@ -373,13 +373,13 @@ function drawBlockSample(x, y, name){
 }
 
 var matrix = new Image();
-matrix.src = '/games/tetris_demo_play/images/matrix.png';
+matrix.src = 'images/matrix.png';
 
 var box = new Image();
-box.src = '/games/tetris_demo_play/images/box.png';
+box.src = 'images/box.png';
 
 var chars = new Image();
-chars.src = '/games/tetris_demo_play/images/chars.png';
+chars.src = 'images/chars.png';
 var charsCoords = {};
 var charsOrder = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ! ';
 var x = 0;
@@ -429,10 +429,10 @@ function drawNumber(x, y, number, place){
 }
 
 var bg = new Image();
-bg.src = '/games/tetris_demo_play/images/bgblock.png';
+bg.src = 'images/bgblock.png';
 
 var blocks = new Image();
-blocks.src = '/games/tetris_demo_play/images/blocks.png';
+blocks.src = 'images/blocks.png';
 function drawBlock(x, y, index){
 	ctx.drawImage(blocks, blockSize*index, 0, blockSize, blockSize, x, y, blockSize, blockSize)
 }

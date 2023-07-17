@@ -31,7 +31,11 @@ module.exports = {
     filename: '[name].js'
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: [
+        '!dist/.gitkeep'
+      ],
+    }),
     new CopyWebpackPlugin({
       patterns: [
         { from: 'src/games/tetris_demo_play/images/', to: 'games/tetris_demo_play/images/'}
