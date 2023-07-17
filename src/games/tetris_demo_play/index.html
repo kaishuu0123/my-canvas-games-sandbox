@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Tetris Demo Play</title>
+  <style>
+    canvas {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <p><a href="/"><< Top</a></p>
+
+  <canvas id="myCanvas"></canvas>
+
+  <% for (var index in htmlWebpackPlugin.files.js) { %>
+    <script src="<%= htmlWebpackPlugin.files.js[index] %>"></script>
+  <% } %>
+
+  <hr style="margin: 10px 0px;"/>
+
+  <h2>参考</h2>
+  <ul>
+    <li><a href="https://codepen.io/semibran/pen/vEZwMo" target="blank">Tetris | CodePen</a></li>
+    <li><a href="https://codepen.io/semibran/" target="blank">semibran | CodePen</a></li>
+  </ul>
+</body>
+</html>

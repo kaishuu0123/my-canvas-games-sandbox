@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Tetris Basic</title>
+  <style>
+    canvas {
+      background: #f5f5f5;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <p><a href="/"><< Top</a></p>
+
+  <canvas id="myCanvas"></canvas>
+
+  <% for (var index in htmlWebpackPlugin.files.js) { %>
+    <script src="<%= htmlWebpackPlugin.files.js[index] %>"></script>
+  <% } %>
+
+  <hr style="margin: 10px 0px;"/>
+
+  <h2>参考</h2>
+  <ul>
+    <li><a href="https://torisky.com/javascript%EF%BC%9A%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0/" target="blank">JavaScript：500行のテトリスプログラム | 人生は読めないブログ</a></li>
+  </ul>
+</body>
+</html>
